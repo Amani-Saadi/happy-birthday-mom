@@ -3,11 +3,12 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Poem from './Poem.jsx'
 
 // 👇 Edit these: your photos (files in public/photos) and captions
+// BASE_URL makes the paths work both locally and on GitHub Pages
 const photos = [
-  { src: '/photos/1.jpg', caption: 'Our favorite day together' },
-  { src: '/photos/2.jpg', caption: 'Your smile lights up everything' },
-  { src: '/photos/3.jpg', caption: 'Thank you for everything, Mom' },
-  { src: '/photos/4.jpg', caption: 'Forever in my heart' },
+  { src: `${import.meta.env.BASE_URL}photos/1.jpg`, caption: 'Our day at the park' },
+  { src: `${import.meta.env.BASE_URL}photos/2.jpg`, caption: 'Sunshine and smiles' },
+  { src: `${import.meta.env.BASE_URL}photos/3.jpg`, caption: 'My favorite person' },
+  { src: `${import.meta.env.BASE_URL}photos/4.jpg`, caption: 'A new little blessing' },
 ]
 
 // 👇 Edit these: your messages
